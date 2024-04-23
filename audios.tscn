@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://6cp721vqo3qh"]
+
+[ext_resource type="AudioStream" uid="uid://b6l7c1t1tocqt" path="res://music/crunch.wav" id="1_e5k0l"]
+[ext_resource type="Script" path="res://audios.gd" id="1_xs31w"]
+[ext_resource type="AudioStream" uid="uid://41rt6sp51mmt" path="res://music/entrar.mp3" id="2_r4frf"]
+[ext_resource type="AudioStream" uid="uid://dacvt8sgv1c8m" path="res://music/loser.mp3" id="3_uhuyk"]
+[ext_resource type="AudioStream" uid="uid://mxs22fno48jo" path="res://music/y2mate.com - Thirty Seconds To Mars  ATTACK.mp3" id="5_bdmb6"]
+
+[node name="Audios" type="Node2D"]
+script = ExtResource("1_xs31w")
+
+[node name="CrunchSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_e5k0l")
+
+[node name="EnterSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_r4frf")
+
+[node name="LoserSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_uhuyk")
+
+[node name="BackgroundSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_bdmb6")

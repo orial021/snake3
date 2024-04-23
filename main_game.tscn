@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://c2mkd0rsy1t3o"]
+
+[ext_resource type="Texture2D" uid="uid://b0widonmgqmoj" path="res://graphics/Snake_spritesheet.png" id="1_7fds8"]
+[ext_resource type="Script" path="res://main_game.gd" id="1_w3y7l"]
+[ext_resource type="Texture2D" uid="uid://dfuhrv2e6y3ht" path="res://graphics/obstacle.png" id="2_6ku6x"]
+[ext_resource type="Texture2D" uid="uid://7u01p1r6d36y" path="res://graphics/PicRetouch_20240413_211255518.png" id="3_1o0xd"]
+[ext_resource type="Texture2D" uid="uid://4drhegb3bp2o" path="res://graphics/grass.png" id="5_1jn7d"]
+[ext_resource type="PackedScene" uid="uid://dly3orgt457s8" path="res://score.tscn" id="7_mah6e"]
+[ext_resource type="FontFile" uid="uid://rxlsv4k4dbco" path="res://fonts/PoetsenOne-Regular.ttf" id="8_73l1f"]
+[ext_resource type="PackedScene" uid="uid://6cp721vqo3qh" path="res://audios.tscn" id="11_8y3bp"]
+[ext_resource type="PackedScene" uid="uid://ddbwrh0s2jj7n" path="res://joystick.tscn" id="11_mf3s5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d14y"]
+resource_name = "rock"
+texture = ExtResource("2_6ku6x")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lhpjc"]
+resource_name = "Apple"
+texture = ExtResource("3_1o0xd")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtjis"]
+texture = ExtResource("1_7fds8")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lhntv"]
+tile_size = Vector2i(40, 40)
+sources/2 = SubResource("TileSetAtlasSource_jtjis")
+sources/0 = SubResource("TileSetAtlasSource_0d14y")
+sources/1 = SubResource("TileSetAtlasSource_lhpjc")
+
+[node name="MainGame" type="Node"]
+script = ExtResource("1_w3y7l")
+
+[node name="SnakeApple" type="TileMap" parent="."]
+z_index = 1
+tile_set = SubResource("TileSet_lhntv")
+format = 2
+
+[node name="SnakeTrick" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.2
+autostart = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_1jn7d")
+stretch_mode = 1
+
+[node name="Back" type="Button" parent="."]
+custom_minimum_size = Vector2(0, 40)
+offset_left = 904.0
+offset_right = 999.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.52549, 0.678431, 0.145098, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_73l1f")
+theme_override_font_sizes/font_size = 28
+text = "ATRAS"
+
+[node name="Score" parent="." instance=ExtResource("7_mah6e")]
+
+[node name="Pause" type="Button" parent="."]
+process_mode = 3
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0.52549, 0.678431, 0.145098, 1)
+theme_override_fonts/font = ExtResource("8_73l1f")
+theme_override_font_sizes/font_size = 28
+text = "PAUSA"
+
+[node name="joystick" parent="." instance=ExtResource("11_mf3s5")]
+
+[node name="Audios" parent="." instance=ExtResource("11_8y3bp")]
+
+[connection signal="timeout" from="SnakeTrick" to="." method="_on_snake_trick_timeout"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
