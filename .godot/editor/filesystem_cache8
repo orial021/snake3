@@ -1,18 +1,18 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1713879036
-audios.gd::GDScript::-1::1713482846::0::1::::<>Node2D<>::
-audios.tscn::PackedScene::2180952267855054247::1713483719::0::1::::<><>::uid://b6l7c1t1tocqt::::res://music/crunch.wav<>res://audios.gd<>uid://41rt6sp51mmt::::res://music/entrar.mp3<>uid://dacvt8sgv1c8m::::res://music/loser.mp3<>uid://mxs22fno48jo::::res://music/y2mate.com - Thirty Seconds To Mars  ATTACK.mp3
+::res://::1713892569
+audios.gd::GDScript::-1::1713892139::0::1::::<>Node2D<>::
+audios.tscn::PackedScene::2180952267855054247::1713892139::0::1::::<><>::uid://b6l7c1t1tocqt::::res://music/crunch.wav<>res://audios.gd<>uid://41rt6sp51mmt::::res://music/entrar.mp3<>uid://dacvt8sgv1c8m::::res://music/loser.mp3<>uid://mxs22fno48jo::::res://music/y2mate.com - Thirty Seconds To Mars  ATTACK.mp3
 export_presets.cfg::TextFile::-1::1713480111::0::1::::<><>::
 icon.svg::CompressedTexture2D::6792607461488386302::1712622173::1712622189::1::::<><>::
 joistick.gd::GDScript::-1::1713481999::0::1::::<>Area2D<>::
-joystick.tscn::PackedScene::7373259499222550889::1713483718::0::1::::<><>::res://joistick.gd<>uid://5hskpufmkmwv::::res://graphics/circle4.png<>uid://bmqvb5xfo3yrw::::res://graphics/steering.png
-main_game.gd::GDScript::-1::1713483570::0::1::::<>Node<>::
-main_game.tscn::PackedScene::6693326546167556322::1713483718::0::1::::<><>::uid://b0widonmgqmoj::::res://graphics/Snake_spritesheet.png<>res://main_game.gd<>uid://dfuhrv2e6y3ht::::res://graphics/obstacle.png<>uid://7u01p1r6d36y::::res://graphics/PicRetouch_20240413_211255518.png<>uid://4drhegb3bp2o::::res://graphics/grass.png<>uid://dly3orgt457s8::::res://score.tscn<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf<>uid://6cp721vqo3qh::::res://audios.tscn<>uid://ddbwrh0s2jj7n::::res://joystick.tscn
+joystick.tscn::PackedScene::7373259499222550889::1713892139::0::1::::<><>::res://joistick.gd<>uid://5hskpufmkmwv::::res://graphics/circle4.png<>uid://bmqvb5xfo3yrw::::res://graphics/steering.png
+main_game.gd::GDScript::-1::1713891956::0::1::::<>Node<>::
+main_game.tscn::PackedScene::6693326546167556322::1713892139::0::1::::<><>::uid://b0widonmgqmoj::::res://graphics/Snake_spritesheet.png<>res://main_game.gd<>uid://dfuhrv2e6y3ht::::res://graphics/obstacle.png<>uid://7u01p1r6d36y::::res://graphics/PicRetouch_20240413_211255518.png<>uid://4drhegb3bp2o::::res://graphics/grass.png<>uid://dly3orgt457s8::::res://score.tscn<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf<>uid://6cp721vqo3qh::::res://audios.tscn<>uid://ddbwrh0s2jj7n::::res://joystick.tscn
 Score2.gd::GDScript::-1::1713211941::0::1::::<>Label<>::
 Score.gd::GDScript::-1::1713372338::0::1::::<>Control<>::
-score.tscn::PackedScene::7982610377176246053::1713483718::0::1::::<><>::res://Score.gd<>uid://7u01p1r6d36y::::res://graphics/PicRetouch_20240413_211255518.png<>uid://by64c62ahf1ci::::res://graphics/ScoreBoard.png<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf
-start_screen.gd::GDScript::-1::1713483473::0::1::::<>Control<>::
-start_screen.tscn::PackedScene::5433058152546783370::1713487817::0::1::::<><>::res://start_screen.gd<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf<>uid://bd42xtn7mwhi3::::res://graphics/fondo1.png<>uid://by64c62ahf1ci::::res://graphics/ScoreBoard.png<>uid://6cp721vqo3qh::::res://audios.tscn<>uid://dly3orgt457s8::::res://score.tscn
+score.tscn::PackedScene::7982610377176246053::1713892139::0::1::::<><>::res://Score.gd<>uid://7u01p1r6d36y::::res://graphics/PicRetouch_20240413_211255518.png<>uid://by64c62ahf1ci::::res://graphics/ScoreBoard.png<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf
+start_screen.gd::GDScript::-1::1713889618::0::1::::<>Control<>::
+start_screen.tscn::PackedScene::5433058152546783370::1713892304::0::1::::<><>::res://start_screen.gd<>uid://rxlsv4k4dbco::::res://fonts/PoetsenOne-Regular.ttf<>uid://bd42xtn7mwhi3::::res://graphics/fondo1.png<>uid://by64c62ahf1ci::::res://graphics/ScoreBoard.png<>uid://6cp721vqo3qh::::res://audios.tscn<>uid://dly3orgt457s8::::res://score.tscn
 ::res://fonts/::1713217812
 PoetsenOne-Regular.ttf::FontFile::1241392209683552830::1712622459::1712622476::1::::<><>::
 ::res://graphics/::1713395305
