@@ -7,12 +7,12 @@ func _ready():
 		$MuteButton.toggled = false'''
 		
 func _on_play_pressed():
-	$Audios.go_player("start_game")
 	var main_game = load("res://main_game.tscn")
 	if main_game:
 		var main_instance = main_game.instantiate()
 		self.queue_free()
 		get_tree().root.add_child(main_instance)
+		$Audios.go_player("start_game")
 	else:
 		print("Error al cargar la escena")
 		
