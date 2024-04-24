@@ -11,8 +11,16 @@ func _ready():
 	Enter = $EnterSound
 	Loser = $LoserSound
 	BackGround = $BackgroundSound
+	is_muted = GLOBAL.is_muted
 	
-	
+func go_player(track):
+	if is_muted == false:
+		var track_name = track
+		play_music(track_name)
+	else:
+		print("silencio")
+		return
+		
 func play_music(track_name):
 	if is_muted == true:
 		print("La musica esta silenciada o la pista no existe.")

@@ -24,7 +24,7 @@ func _ready():
 	apple_pos = place_apple()
 	rock_positions = [place_rock()]
 	draw_rocks()
-	$Audios.play_music("background")
+	$Audios.go_player("background")
 	
 func place_apple():
 	randomize()
@@ -138,7 +138,7 @@ func check_apple_eaten():
 	if apple_pos == snake_body[0]:
 		apple_pos = place_apple()
 		add_apple = true
-		$Audios.play_music("eat")
+		$Audios.go_player("eat")
 		apple_count += 1
 		$Score.increment_score()
 		if apple_count % 5 == 0: 
@@ -161,7 +161,7 @@ func check_game_over():
 			reset()
 				
 func reset():
-	$Audios.play_music("lose")
+	$Audios.go_player("lose")
 	snake_body = [Vector2i(5, 10), Vector2i(4, 10), Vector2i(3, 10)]
 	snake_direction = Vector2i(1, 0)
 	$Score.update_high_score()
@@ -175,12 +175,12 @@ func reset():
 	draw_rocks()
 
 func _on_back_pressed():
+	$Audios.go_player("Lose")
 	var start_screen = load("res://start_screen.tscn")
 	if start_screen:
 		var start_instance = start_screen.instantiate()
 		self.get_parent().add_child(start_instance)
 		self.queue_free()
-		$Audios.play_music("Lose")
 	else:
 		print("Error al cargar la escena")
 
