@@ -1,5 +1,5 @@
 extends Node
-const SNAKE = 2
+var SNAKE = 2
 const APPLE = 1
 const ROCK = 0
 var apple_pos
@@ -143,13 +143,14 @@ func check_apple_eaten():
 		$Score.increment_score()
 		if apple_count % 5 == 0: 
 			rock_positions.append(place_rock())
+			SNAKE += 1
 			new_wait_time = $SnakeTrick.wait_time - 0.02
 			if new_wait_time > 0.05:
 				$SnakeTrick.wait_time -= 0.02
 				$SnakeTrick.start()
 		elif apple_count % 3 == 0:
 			rock_positions.append(place_rock())
-	
+			
 func check_game_over():
 	var head = snake_body[0]
 	if head.x > 25 or head.x <0 or head.y >20 or head.y < 0:
@@ -162,6 +163,8 @@ func check_game_over():
 				
 func reset():
 	$Audios.go_player("lose")
+	delete_tiles(SNAKE)
+	SNAKE = 2
 	snake_body = [Vector2i(5, 10), Vector2i(4, 10), Vector2i(3, 10)]
 	snake_direction = Vector2i(1, 0)
 	$Score.update_high_score()
@@ -205,4 +208,3 @@ func _on_pause_pressed():
 	else:
 		get_tree().paused = true
 		$Pause.text = "REANUDAR"
-		

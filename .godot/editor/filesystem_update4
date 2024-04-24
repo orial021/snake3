@@ -1,10 +1,8 @@
-res://start_screen.tscn
-res://audios.gd
-res://main_game.gd
 res://main_game.tscn
+res://main_game.gd
+res://start_screen.tscn
 res://score.tscn
 res://joystick.tscn
 res://audios.tscn
-res://GLOBAL.gd
-res://start_screen.gd
 res://GLOBAL.tscn
+res://audios.gd

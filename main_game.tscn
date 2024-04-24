@@ -1,12 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://c2mkd0rsy1t3o"]
+[gd_scene load_steps=22 format=3 uid="uid://c2mkd0rsy1t3o"]
 
 [ext_resource type="Texture2D" uid="uid://b0widonmgqmoj" path="res://graphics/Snake_spritesheet.png" id="1_7fds8"]
 [ext_resource type="Script" path="res://main_game.gd" id="1_w3y7l"]
 [ext_resource type="Texture2D" uid="uid://dfuhrv2e6y3ht" path="res://graphics/obstacle.png" id="2_6ku6x"]
 [ext_resource type="Texture2D" uid="uid://7u01p1r6d36y" path="res://graphics/PicRetouch_20240413_211255518.png" id="3_1o0xd"]
 [ext_resource type="Texture2D" uid="uid://4drhegb3bp2o" path="res://graphics/grass.png" id="5_1jn7d"]
+[ext_resource type="Texture2D" uid="uid://cnjcnd7kat8jw" path="res://graphics/Snake_spritesheetpink.png" id="5_lbbun"]
+[ext_resource type="Texture2D" uid="uid://px4a3lpqcwy4" path="res://graphics/Snake_spritesheetRed.png" id="6_vjul6"]
 [ext_resource type="PackedScene" uid="uid://dly3orgt457s8" path="res://score.tscn" id="7_mah6e"]
+[ext_resource type="Texture2D" uid="uid://vlyov4ad3fut" path="res://graphics/Snake_spritesheetYellow.png" id="7_u2e2j"]
 [ext_resource type="FontFile" uid="uid://rxlsv4k4dbco" path="res://fonts/PoetsenOne-Regular.ttf" id="8_73l1f"]
+[ext_resource type="Texture2D" uid="uid://bv76u3e4ywboh" path="res://graphics/Snake_spritesheetPurple.png" id="8_dqqu0"]
 [ext_resource type="PackedScene" uid="uid://6cp721vqo3qh" path="res://audios.tscn" id="11_8y3bp"]
 [ext_resource type="PackedScene" uid="uid://ddbwrh0s2jj7n" path="res://joystick.tscn" id="11_mf3s5"]
 
@@ -41,11 +45,95 @@ texture_region_size = Vector2i(40, 40)
 5:1/0 = 0
 6:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7rfr1"]
+resource_name = "SnakePink"
+texture = ExtResource("5_lbbun")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mrqjm"]
+resource_name = "SnakeRed"
+texture = ExtResource("6_vjul6")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wqhnw"]
+resource_name = "SnakeYellow"
+texture = ExtResource("7_u2e2j")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sk8s5"]
+resource_name = "SnakePurple"
+texture = ExtResource("8_dqqu0")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_lhntv"]
 tile_size = Vector2i(40, 40)
 sources/2 = SubResource("TileSetAtlasSource_jtjis")
 sources/0 = SubResource("TileSetAtlasSource_0d14y")
 sources/1 = SubResource("TileSetAtlasSource_lhpjc")
+sources/3 = SubResource("TileSetAtlasSource_7rfr1")
+sources/4 = SubResource("TileSetAtlasSource_mrqjm")
+sources/5 = SubResource("TileSetAtlasSource_wqhnw")
+sources/6 = SubResource("TileSetAtlasSource_sk8s5")
 
 [node name="MainGame" type="Node"]
 script = ExtResource("1_w3y7l")
