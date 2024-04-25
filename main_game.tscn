@@ -27,6 +27,25 @@ texture = ExtResource("3_1o0xd")
 texture_region_size = Vector2i(40, 40)
 0:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r3kuh"]
+texture = ExtResource("4_1eb40")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jtjis"]
 texture = ExtResource("1_7fds8")
 texture_region_size = Vector2i(40, 40)
@@ -86,26 +105,6 @@ texture_region_size = Vector2i(40, 40)
 5:1/0 = 0
 6:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wqhnw"]
-resource_name = "SnakeYellow"
-texture = ExtResource("7_u2e2j")
-texture_region_size = Vector2i(40, 40)
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-7:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sk8s5"]
 resource_name = "SnakePurple"
 texture = ExtResource("8_dqqu0")
@@ -126,8 +125,9 @@ texture_region_size = Vector2i(40, 40)
 5:1/0 = 0
 6:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r3kuh"]
-texture = ExtResource("4_1eb40")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wqhnw"]
+resource_name = "SnakeYellow"
+texture = ExtResource("7_u2e2j")
 texture_region_size = Vector2i(40, 40)
 0:0/0 = 0
 1:0/0 = 0
@@ -151,10 +151,10 @@ sources/0 = SubResource("TileSetAtlasSource_0d14y")
 sources/1 = SubResource("TileSetAtlasSource_lhpjc")
 sources/3 = SubResource("TileSetAtlasSource_7rfr1")
 sources/4 = SubResource("TileSetAtlasSource_mrqjm")
-sources/5 = SubResource("TileSetAtlasSource_wqhnw")
 sources/6 = SubResource("TileSetAtlasSource_sk8s5")
 sources/2 = SubResource("TileSetAtlasSource_jtjis")
-sources/7 = SubResource("TileSetAtlasSource_r3kuh")
+sources/8 = SubResource("TileSetAtlasSource_wqhnw")
+sources/10 = SubResource("TileSetAtlasSource_r3kuh")
 
 [node name="MainGame" type="Node"]
 script = ExtResource("1_w3y7l")

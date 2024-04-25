@@ -16,12 +16,14 @@ func _on_play_pressed():
 	else:
 		print("Error al cargar la escena")
 		
-
-
 func _on_credits_pressed():
-	pass
-
-
+	var credits = load("res://credits.tscn")
+	if credits:
+		var credit_instance = credits.instantiate()
+		get_tree().root.add_child(credit_instance)
+	else:
+		print("Error al cargar la escena")
+	
 func _on_mute_toggled(toggled_on):
 	if toggled_on:
 		GLOBAL.is_muted = true

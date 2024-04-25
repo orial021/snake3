@@ -143,13 +143,17 @@ func check_apple_eaten():
 		$Score.increment_score()
 		if apple_count % 5 == 0: 
 			rock_positions.append(place_rock())
-			SNAKE += 1
+			SNAKE += 2
 			new_wait_time = $SnakeTrick.wait_time - 0.02
 			if new_wait_time > 0.05:
 				$SnakeTrick.wait_time -= 0.02
 				$SnakeTrick.start()
 		elif apple_count % 3 == 0:
 			rock_positions.append(place_rock())
+		if apple_count == 10:
+			$TextureRect.texture = load("res://graphics/grass3.png")
+		elif apple_count == 20:
+			$TextureRect.texture = load("res://graphics/grass2.png")
 			
 func check_game_over():
 	var head = snake_body[0]
@@ -171,6 +175,7 @@ func reset():
 	$Score.score = 0
 	apple_count = 0
 	$Score.update_score()
+	$TextureRect.texture = load("res://graphics/grass.png")
 	$SnakeTrick.wait_time = start_timer
 	for rock_pos in rock_positions:
 		$SnakeApple.set_cell(0, Vector2i(rock_pos.x, rock_pos.y), -1)

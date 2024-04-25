@@ -4,4 +4,5 @@ res://score.tscn
 res://joystick.tscn
 res://audios.tscn
 res://GLOBAL.tscn
-res://start_screen.gd
+res://credits.tscn
+res://main_game.gd
