@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cicouo6b5gnkt"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_16sfs"]
-[ext_resource type="Texture2D" uid="uid://bk75iq1qscoqe" path="res://graphics/credits2.png" id="2_ibtuy"]
+[ext_resource type="Texture2D" uid="uid://de473ymk1ec7u" path="res://graphics/credits3.png" id="2_hw0eu"]
 [ext_resource type="FontFile" uid="uid://rxlsv4k4dbco" path="res://fonts/PoetsenOne-Regular.ttf" id="2_vxcvk"]
 
 [sub_resource type="Animation" id="Animation_dfcud"]
@@ -49,9 +49,9 @@ offset_bottom = 40.0
 script = ExtResource("1_16sfs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(568, 344)
+position = Vector2(528, 328)
 rotation = 0.10472
-texture = ExtResource("2_ibtuy")
+texture = ExtResource("2_hw0eu")
 
 [node name="animaciones" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
@@ -60,9 +60,9 @@ libraries = {
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 256.0
+offset_left = 280.0
 offset_top = 200.0
-offset_right = 808.0
+offset_right = 832.0
 offset_bottom = 477.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_vxcvk")
