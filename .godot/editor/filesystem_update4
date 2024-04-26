@@ -5,3 +5,4 @@ res://joystick.tscn
 res://audios.tscn
 res://GLOBAL.tscn
 res://credits.tscn
+res://main_game.gd

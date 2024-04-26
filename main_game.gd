@@ -24,7 +24,6 @@ func _ready():
 	apple_pos = place_apple()
 	rock_positions = [place_rock()]
 	draw_rocks()
-	$Audios.go_player("background")
 	
 func place_apple():
 	randomize()
@@ -184,6 +183,8 @@ func reset():
 
 func _on_back_pressed():
 	$Audios.go_player("Lose")
+	if get_tree().paused == true:
+		get_tree().paused = false
 	var start_screen = load("res://start_screen.tscn")
 	if start_screen:
 		var start_instance = start_screen.instantiate()

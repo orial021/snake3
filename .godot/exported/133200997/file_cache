@@ -1,7 +1,7 @@
-res://main_game.tscn::46372181ec9070bcc21e0af21a89dd51::1714057385::res://.godot/exported/133200997/export-52da0abab86e6d1a7311a08b23751124-main_game.scn
-res://start_screen.tscn::2f46f6b9dd0b97809677e467a29973ca::1714057385::res://.godot/exported/133200997/export-7629d1afc167605ccc7fe34222f7c5a4-start_screen.scn
-res://score.tscn::c82c209c8b69d7f17b427e00de6808af::1714057385::res://.godot/exported/133200997/export-2262e171c9dde3f5c6077bef1c360ca8-score.scn
-res://audios.tscn::d8e7cb5a1b77221de98f4c5a3e71db22::1714057385::res://.godot/exported/133200997/export-9b9636bbf36999cc8ebc9ec476ad4a20-audios.scn
-res://credits.tscn::1713e385d11260d1872d24646e42c137::1714057385::res://.godot/exported/133200997/export-88886d509479dcca8ec994bc2c1f3191-credits.scn
-res://GLOBAL.tscn::0b2e96ba37586e63d0be92dbd4ef6a8c::1714057385::res://.godot/exported/133200997/export-20c05e090483bd9d87969c5a5eb2f7b2-GLOBAL.scn
-res://joystick.tscn::b20492f0978cf7cd8d4ea663b5571035::1714057385::res://.godot/exported/133200997/export-3f7f80ab49d58989f78aac04521f8556-joystick.scn
+res://main_game.tscn::fecc1952ec41eb7b9eefeb4e3b2d117f::1714140957::res://.godot/exported/133200997/export-52da0abab86e6d1a7311a08b23751124-main_game.scn
+res://start_screen.tscn::2f46f6b9dd0b97809677e467a29973ca::1714140956::res://.godot/exported/133200997/export-7629d1afc167605ccc7fe34222f7c5a4-start_screen.scn
+res://score.tscn::c82c209c8b69d7f17b427e00de6808af::1714140957::res://.godot/exported/133200997/export-2262e171c9dde3f5c6077bef1c360ca8-score.scn
+res://audios.tscn::2f6e5dd6a363f6a11bb7e72b4be4fe17::1714141036::res://.godot/exported/133200997/export-9b9636bbf36999cc8ebc9ec476ad4a20-audios.scn
+res://credits.tscn::d6424f080fdf6015a6dc2f70731b1e8a::1714140958::res://.godot/exported/133200997/export-88886d509479dcca8ec994bc2c1f3191-credits.scn
+res://GLOBAL.tscn::0b2e96ba37586e63d0be92dbd4ef6a8c::1714140958::res://.godot/exported/133200997/export-20c05e090483bd9d87969c5a5eb2f7b2-GLOBAL.scn
+res://joystick.tscn::b20492f0978cf7cd8d4ea663b5571035::1714140957::res://.godot/exported/133200997/export-3f7f80ab49d58989f78aac04521f8556-joystick.scn

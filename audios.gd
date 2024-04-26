@@ -26,7 +26,7 @@ func play_music(track_name):
 		print("La musica esta silenciada o la pista no existe.")
 	if is_muted == false:
 		if track_name == "background":
-			BackGround.play()
+			return
 		if track_name == "start_game":
 			Enter.play()
 		if track_name == "eat":
